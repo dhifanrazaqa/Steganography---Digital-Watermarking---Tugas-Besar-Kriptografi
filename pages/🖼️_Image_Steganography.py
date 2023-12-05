@@ -72,7 +72,7 @@ with tab1:
   uploaded_embed_file = st.file_uploader("Pilih gambar!", type=['png'])
   
   if pesan is not "" and uploaded_embed_file is not None:
-    if st.button("Decode", type="primary"):
+    if st.button("Embed", type="primary"):
       load_text = st.text("")
       load_text.write(":orange[Mohon tunggu..]")
       st.image(Encode(uploaded_embed_file, pesan), output_format="PNG")
